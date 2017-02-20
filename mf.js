@@ -21,7 +21,7 @@ $(function () {
         cameraTarget = new THREE.Vector3(0, -0, 0);
 
         scene = new THREE.Scene();
-        scene.fog = new THREE.Fog(0xf0fff0, 2, 15);
+        scene.fog = new THREE.Fog(0xf0f4f0, 2, 15);
 
         // Ground
         var plane = new THREE.Mesh(
