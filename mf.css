@@ -1,0 +1,38 @@
+﻿@charset "utf-8";
+body {
+  margin: 0;
+  background-color: white;
+  font-size: 16px;
+  font-family: 'Reem Kufi', sans-serif;
+}
+header {
+  width: 100%;
+  overflow: hidden;
+}
+main {
+  position: relative;
+  margin-top: -35vh;
+}
+.container {
+  padding: 1rem;
+}
+h1,
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 0;
+}
+p {
+  text-align: justify;
+}
+a {
+  color: #73076b;
+  font-style: italic;
+  text-decoration: none;
+  font-family: serif;
+  letter-spacing: .1rem;
+}
+/*# sourceMappingURL=mf.css.map */
