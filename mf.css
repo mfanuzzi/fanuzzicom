@@ -82,6 +82,9 @@ p img.end-piece {
 #work li h2 {
   font-size: 1.5rem;
 }
+#work li h2 a {
+  color: #996823;
+}
 #work li small {
   float: right;
   font-size: .7rem;
@@ -101,7 +104,60 @@ p img.end-piece {
   left: -15.184vw;
   top: 0;
 }
+@media (min-width: 1024px) {
+  #work li > figure {
+    background-size: calc(1800px - 100vh);
+  }
+}
 #work li > div {
   margin: 6rem 0;
+}
+nav {
+  position: fixed;
+  left: 1rem;
+  bottom: 0;
+  width: 12vw;
+  opacity: .5;
+}
+nav svg {
+  width: 5vw;
+  margin-left: -2vw;
+  filter: drop-shadow(2px -2px 1px #ffffff);
+}
+@media (min-width: 1024px) {
+  nav {
+    width: 11.5vw;
+  }
+  nav svg {
+    width: 3vw;
+    margin-left: -1vw;
+  }
+}
+nav #cls-1,
+nav #cls-2,
+nav #cls-3 {
+  fill: none;
+  stroke: #996823;
+  stroke-miterlimit: 8;
+  transition: stroke-width 0.5s;
+  stroke-width: 3px;
+}
+nav #cls-1 {
+  stroke-width: 3px;
+}
+nav #cls-2 {
+  stroke-width: 3px;
+  cursor: pointer;
+}
+nav #cls-3 {
+  cursor: pointer;
+}
+.page-last #cls-3 {
+  stroke-width: 1px;
+  cursor: default;
+}
+.page-first #cls-2 {
+  stroke-width: 1px;
+  cursor: default;
 }
 /*# sourceMappingURL=mf.css.map */

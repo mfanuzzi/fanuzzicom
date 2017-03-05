@@ -1,6 +1,7 @@
 @charset "utf-8";
 
 @royal: #73076b;
+@gold: #996823;
 
 html, body, #main {
     height: 100%;
@@ -95,6 +96,9 @@ p img.end-piece {
 
         h2 {
             font-size: 1.5rem;
+            a {
+                color: @gold;
+            }
         }
 
         small {
@@ -111,6 +115,9 @@ p img.end-piece {
             background-image: url(goodnes.gif);
             background-repeat: repeat;
             background-size: calc(~"1200px - 100vh");
+            @media (min-width: 1024px) {
+                background-size: calc(~"1800px - 100vh");
+            }
             width: 100vw;
             height: 100vh;
             position: absolute;
@@ -121,4 +128,56 @@ p img.end-piece {
             margin: 6rem 0;
         }
     }
+}
+
+
+nav {
+    position: fixed;
+    left: 1rem;
+    bottom: 0;
+    width: 12vw;
+    opacity: .5;
+ 
+    svg {
+        width: 5vw;
+        margin-left: -2vw;
+        filter: drop-shadow(2px -2px 1px #fff)
+    }
+
+    @media (min-width: 1024px) {
+        width: 11.5vw;
+        svg {
+            width: 3vw;
+            margin-left: -1vw;
+        }
+    }
+
+
+    #cls-1, #cls-2, #cls-3 {
+        fill: none;
+        stroke: @gold;
+        stroke-miterlimit: 8;
+        transition: stroke-width .5s;
+        stroke-width: 3px;
+    }
+
+    #cls-1 {
+        stroke-width: 3px;
+    }
+
+    #cls-2 {
+        stroke-width: 3px;
+        cursor: pointer;
+    }
+
+    #cls-3 {
+        cursor: pointer;
+    }
+}
+
+.page-last { 
+    #cls-3 { stroke-width: 1px; cursor: default; }
+}
+.page-first { 
+    #cls-2 { stroke-width: 1px; cursor: default; }
 }
