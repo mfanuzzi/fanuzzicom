@@ -1,4 +1,4 @@
-@charset "utf-8";
+﻿@charset "utf-8";
 
 @royal: #73076b;
 @gold: #996823;
@@ -180,4 +180,11 @@ nav {
 }
 .page-first { 
     #cls-2 { stroke-width: 1px; cursor: default; }
+}
+
+// just hide the whole thing in portrait phone
+@media (max-width: 420px) {
+    nav {
+        display: none;
+    }
 }

@@ -160,4 +160,9 @@ nav #cls-3 {
   stroke-width: 1px;
   cursor: default;
 }
+@media (max-width: 420px) {
+  nav {
+    display: none;
+  }
+}
 /*# sourceMappingURL=mf.css.map */
