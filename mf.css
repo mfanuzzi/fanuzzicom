@@ -43,13 +43,16 @@ a {
   font-style: italic;
   text-decoration: none;
   font-family: serif;
-  letter-spacing: .1rem;
+}
+a,
+em {
+  letter-spacing: 0.1rem;
 }
 #logo {
   position: absolute;
   top: 0;
   width: 16.18vw;
-  opacity: .1;
+  opacity: 0.1;
   left: 1rem;
 }
 /*img {    
@@ -61,7 +64,7 @@ a {
 }*/
 p img.end-piece {
   width: 1em;
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 #home {
   min-height: 32vh;
@@ -87,7 +90,7 @@ p img.end-piece {
 }
 #work li small {
   float: right;
-  font-size: .7rem;
+  font-size: 0.7rem;
   line-height: 1.5rem;
   vertical-align: bottom;
   color: #666;
@@ -98,15 +101,29 @@ p img.end-piece {
   background-image: url(goodnes.gif);
   background-repeat: repeat;
   background-size: calc(1200px - 100vh);
+  /*@media (min-width: 1024px) {
+                background-size: calc(~"1800px - 100vh");
+            }*/
   width: 100vw;
   height: 100vh;
   position: absolute;
   left: -15.184vw;
   top: 0;
 }
+#work li > figure.smaller {
+  background-size: 20vw;
+}
 @media (min-width: 1024px) {
-  #work li > figure {
-    background-size: calc(1800px - 100vh);
+  #work li > figure.smaller {
+    background-size: 10vw;
+  }
+}
+#work li > figure.full {
+  background-size: 33.333vw;
+}
+@media (min-width: 1024px) {
+  #work li > figure.full {
+    background-size: 25vw;
   }
 }
 #work li > div {
@@ -117,12 +134,12 @@ nav {
   left: 1rem;
   bottom: 0;
   width: 12vw;
-  opacity: .5;
+  opacity: 0.5;
 }
 nav svg {
   width: 5vw;
   margin-left: -2vw;
-  filter: drop-shadow(2px -2px 1px #ffffff);
+  filter: drop-shadow(2px -2px 1px #fff);
 }
 @media (min-width: 1024px) {
   nav {
@@ -165,4 +182,3 @@ nav #cls-3 {
     display: none;
   }
 }
-/*# sourceMappingURL=mf.css.map */

@@ -121,7 +121,7 @@ $(function () {
     }
     var ran = 3.0;
     function render() {
-        var timer = Date.now() * 0.00009;
+        var timer = Date.now() * 0.0001;
         //var rana = getRandomArbitrary(-4000, 3000) / 1000;
         //ran += rana;
         //console.log(ran);

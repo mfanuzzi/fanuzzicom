@@ -53,6 +53,9 @@ a {
     font-style: italic;
     text-decoration: none;
     font-family: serif;
+}
+
+a, em {
     letter-spacing: .1rem;
 }
 
@@ -89,6 +92,7 @@ p img.end-piece {
         margin: 0;
         list-style-type: none;
     }
+
     li {
         position: relative;
         padding-top: 100vh;
@@ -96,6 +100,7 @@ p img.end-piece {
 
         h2 {
             font-size: 1.5rem;
+
             a {
                 color: @gold;
             }
@@ -115,15 +120,31 @@ p img.end-piece {
             background-image: url(goodnes.gif);
             background-repeat: repeat;
             background-size: calc(~"1200px - 100vh");
-            @media (min-width: 1024px) {
+            /*@media (min-width: 1024px) {
                 background-size: calc(~"1800px - 100vh");
-            }
+            }*/
             width: 100vw;
             height: 100vh;
             position: absolute;
             left: -(1.168vw * 13);
             top: 0;
+
+            &.smaller {
+                @media (min-width: 1024px) {
+                    background-size: 10vw;
+                }
+
+                background-size: 20vw;
+            }
+
+            &.full {
+                @media (min-width: 1024px) {
+                    background-size: 25vw;
+                }
+                background-size: 33.333vw;
+            }
         }
+
         > div {
             margin: 6rem 0;
         }
